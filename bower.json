@@ -1,0 +1,27 @@
+{
+	"name"        : "flexy-plexy",
+	"homepage"    : "https://github.com/nazar-pc/Flexy-plexy",
+	"authors"     : [
+		"Nazar Mokrynskyi <nazar@mokrynskyi.com>"
+	],
+	"description" : "Ridiculously simple, incredibly powerful grid system",
+	"keywords"    : [
+		"css",
+		"flex",
+		"flexbox",
+		"grid",
+		"web-components",
+		"webcomponents",
+		"polymer"
+	],
+	"license"     : "MIT",
+	"repository"  : {
+		"type" : "git",
+		"url"  : "git://github.com/nazar-pc/Flexy-plexy.git"
+	},
+	"ignore"      : [
+		"demo.css",
+		"index.html",
+		"readme.md"
+	]
+}

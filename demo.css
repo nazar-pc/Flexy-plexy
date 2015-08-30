@@ -1,0 +1,188 @@
+.flex {
+	border                  : 1px solid red;
+	display                 : flex;
+	display                 : -ms-flexbox;
+	display                 : -webkit-flex;
+	flex-wrap               : wrap;
+	-ms-flex-wrap           : wrap;
+	-webkit-flex-wrap       : wrap;
+	justify-content         : space-between;
+	-ms-flex-pack           : justify;
+	-webkit-justify-content : space-between
+}
+
+.flex > :not(template) {
+	box-sizing : border-box !important
+}
+
+.flex > :not(template):nth-of-type(3n+1) {
+	flex         : calc(1 / 6 * 100% - 1em);
+	-ms-flex     : calc(1 / 6 * 100% - 1em);
+	-webkit-flex : calc(1 / 6 * 100% - 1em);
+	margin-right : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+1) ~ :not(template) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+2) {
+	flex         : calc(2 / 6 * 100% - 1em);
+	-ms-flex     : calc(2 / 6 * 100% - 1em);
+	-webkit-flex : calc(2 / 6 * 100% - 1em);
+	margin-right : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+2) ~ :not(template) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+3) {
+	flex         : calc(3 / 6 * 100%);
+	-ms-flex     : calc(3 / 6 * 100%);
+	-webkit-flex : calc(3 / 6 * 100%);
+	margin-right : 0
+}
+
+.flex > :not(template):nth-of-type(3n+3) ~ :not(template) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+4) {
+	flex         : calc(2 / 6 * 100% - 1em);
+	-ms-flex     : calc(2 / 6 * 100% - 1em);
+	-webkit-flex : calc(2 / 6 * 100% - 1em);
+	margin-right : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+4) ~ :not(template) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+5) {
+	flex         : calc(2 / 6 * 100% - 1em);
+	-ms-flex     : calc(2 / 6 * 100% - 1em);
+	-webkit-flex : calc(2 / 6 * 100% - 1em);
+	margin-right : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+5) ~ :not(template) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(3n+6) {
+	flex         : calc(2 / 6 * 100%);
+	-ms-flex     : calc(2 / 6 * 100%);
+	-webkit-flex : calc(2 / 6 * 100%);
+	margin-right : 0
+}
+
+.flex > :not(template):nth-of-type(3n+6) ~ :not(template) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(1n+7) {
+	flex         : calc(1 / 1 * 100%);
+	-ms-flex     : calc(1 / 1 * 100%);
+	-webkit-flex : calc(1 / 1 * 100%);
+	margin-right : 0
+}
+
+.flex > :not(template):nth-of-type(1n+7) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(2n+8) {
+	flex         : calc(2 / 4 * 100% - 1em);
+	-ms-flex     : calc(2 / 4 * 100% - 1em);
+	-webkit-flex : calc(2 / 4 * 100% - 1em);
+	margin-right : 1em
+}
+
+.flex > :not(template):nth-of-type(2n+8) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex > :not(template):nth-of-type(2n+9) {
+	flex         : calc(2 / 4 * 100%);
+	-ms-flex     : calc(2 / 4 * 100%);
+	-webkit-flex : calc(2 / 4 * 100%);
+	margin-right : 0
+}
+
+.flex > :not(template):nth-of-type(2n+9) ~ :not(template) ~ :not(template) {
+	margin-top : 1em
+}
+
+.flex {
+	display                 : flex;
+	display                 : -ms-flexbox;
+	display                 : -webkit-flex;
+	flex-wrap               : wrap;
+	-ms-flex-wrap           : wrap;
+	-webkit-flex-wrap       : wrap;
+	justify-content         : space-between;
+	-ms-flex-pack           : justify;
+	-webkit-justify-content : space-between
+}
+
+.flex > :not(template) {
+	box-sizing : border-box !important
+}
+
+@media (max-width : 1000px) {
+	.flex > :not(template):nth-of-type(2n+1) {
+		flex         : calc(1 / 2 * 100% - 1em);
+		-ms-flex     : calc(1 / 2 * 100% - 1em);
+		-webkit-flex : calc(1 / 2 * 100% - 1em);
+		margin-right : 1em
+	}
+
+	.flex > :not(template):nth-of-type(2n+1) ~ :not(template) ~ :not(template) {
+		margin-top : 1em
+	}
+
+	.flex > :not(template):nth-of-type(2n+2) {
+		flex         : calc(1 / 2 * 100%);
+		-ms-flex     : calc(1 / 2 * 100%);
+		-webkit-flex : calc(1 / 2 * 100%);
+		margin-right : 0
+	}
+
+	.flex > :not(template):nth-of-type(2n+2) ~ :not(template) ~ :not(template) {
+		margin-top : 1em
+	}
+}
+
+.flex {
+	display                 : flex;
+	display                 : -ms-flexbox;
+	display                 : -webkit-flex;
+	flex-wrap               : wrap;
+	-ms-flex-wrap           : wrap;
+	-webkit-flex-wrap       : wrap;
+	justify-content         : space-between;
+	-ms-flex-pack           : justify;
+	-webkit-justify-content : space-between
+}
+
+.flex > :not(template) {
+	box-sizing : border-box !important
+}
+
+@media (max-width : 500px) {
+	.flex > :not(template):nth-of-type(1n+1) {
+		flex         : calc(1 / 1 * 100%);
+		-ms-flex     : calc(1 / 1 * 100%);
+		-webkit-flex : calc(1 / 1 * 100%);
+		margin-right : 0
+	}
+
+	.flex > :not(template):nth-of-type(1n+1) ~ :not(template) {
+		margin-top : 1em
+	}
+}
+
+.flex > * {
+	border : 1px solid blue
+}
