@@ -50,7 +50,7 @@
 
 			$flex-width : #{'calc(' + $flex-width + ')'};
 
-			& > #{$exclude-selector + ':' + $include-selector + '(' + $columns-in-row + 'n + ' + ($index-offset + $index) + ')'} {
+			> #{$exclude-selector + ':' + $include-selector + '(' + $columns-in-row + 'n + ' + ($index-offset + $index) + ')'} {
 				margin-right : $margin-right;
 				width        : $flex-width;
 
@@ -60,14 +60,14 @@
 						display : none;
 					}
 				}
-
-				#{'& ' + $offset-selector} {
-					margin-top : $gutter-width;
-				}
 			}
 
 			$index : $index + 1;
 			$items-counter : $items-counter + 1;
 		}
+	}
+
+	> #{$exclude-selector + ':' + $include-selector + '(' + 'n + ' + (length(nth($rows, 1)) + 1) + ')'} {
+		margin-top : $gutter-width;
 	}
 }
