@@ -91,5 +91,22 @@ Well, you should already know how to use it, but here are some rules:
 ## What else?
 We love Web Components:) So `<template>` elements will not cause any issues if you use [Polymer](https://github.com/Polymer/polymer)'s `dom-if` or `dom-repeat`.
 
+## Advanced
+#### nth-child
+In fact, first argument may contain not only gutter.
+Usually Flexy-plexy generates CSS that uses `nth-of-type` selector, which means that you can use it with `<template>`, `<style>` and `<script>` elements inside without breaking markup.
+However, this also means that you can use only one type of elements, namely, only `<div>` or only `<article>`, which is not always convenient.
+For some cases you may want to use `nth-child` instead, just pass `child` keyword alongside with gutter:
+```css
+@include flexy-plexy(1em child, 1, 1 3 1, 1);
+```
+
+#### Hide columns
+Well, setting width to 0 allows you to hide column completely:
+```css
+@include flexy-plexy(1em, 1 2 0 3, 2 2 2, 1, 2 2);
+```
+Third column in example above will be hidden completely and will not affect layout in any way.
+
 ## License
 MIT, see license.txt
